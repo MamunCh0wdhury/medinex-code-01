@@ -3,12 +3,12 @@
     "rootDir": "./src",
     "outDir": "./dist",
 
-    "module": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "target": "ES2023",
-    "lib": ["esnext"],
-    "types": [
-      "node"
-    ],
+
+    "lib": ["ESNext"],
+    "types": ["node"],
 
     "sourceMap": true,
     "declaration": true,
@@ -21,11 +21,10 @@
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "moduleDetection": "force",
+
     "skipLibCheck": true,
-    "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "ignoreDeprecations": "6.0"
+    "esModuleInterop": true
   },
   "include": ["src/**/*.ts"]
 }

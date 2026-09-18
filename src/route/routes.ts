@@ -1,7 +1,7 @@
 import express from 'express';
-import categoryController from '../module/category/category.controller';
-import productController from '../module/product/product.controller';
-import imageController from '../module/image/image.controller';
+import categoryController from '../module/category/category.controller.js';
+import productController from '../module/product/product.controller.js';
+import imageController from '../module/image/image.controller.js';
 const router = express.Router();
 
 router.route("/category").post(categoryController.createCategory);

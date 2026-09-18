@@ -1,7 +1,7 @@
-import AppError from "../../utils/AppError";
-import { catchAsync } from "../../utils/catchAsync";
-import categoryService from "./category.service";
-import { categoryValidation } from "./category.validation";
+import AppError from "../../utils/AppError.js";
+import { catchAsync } from "../../utils/catchAsync.js";
+import categoryService from "./category.service.js";
+import { categoryValidation } from "./category.validation.js";
 
 const requireParamId = (id: string | string[] | undefined): number => {
   if (typeof id !== "string" || !id.trim()) {

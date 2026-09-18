@@ -1,8 +1,7 @@
 import express, { type Application,type Response } from "express";
 import cors from 'cors';
-import router from "./route/routes";
-import errorMiddleware from "./middleware/error.middleware";
-import AppError from "./utils/AppError";
+import router from "./route/routes.js";
+import errorMiddleware from "./middleware/error.middleware.js";
 
 const app:Application = express();
 

@@ -5,7 +5,7 @@ import type {
   NextFunction,
   ErrorRequestHandler,
 } from "express";
-import AppError from "../utils/AppError"; // adjust path as needed
+import AppError from "../utils/AppError.js"; // adjust path as needed
 
 const errorMiddleware: ErrorRequestHandler = (
   err,

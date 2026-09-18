@@ -1,5 +1,5 @@
-import AppError from "../../utils/AppError";
-import imageRepository from "./image.repository";
+import AppError from "../../utils/AppError.js";
+import imageRepository from "./image.repository.js";
 
 class ImageService {
   // create image

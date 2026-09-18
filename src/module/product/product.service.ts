@@ -1,5 +1,5 @@
-import AppError from "../../utils/AppError";
-import productRepository from "./product.repository";
+import AppError from "../../utils/AppError.js";
+import productRepository from "./product.repository.js";
 
 class ProductService {
   // create category

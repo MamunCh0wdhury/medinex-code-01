@@ -6,19 +6,24 @@
   "license": "ISC",
   "author": "",
   "type": "module",
-  "main": "server.js",
+  "main": "dist/server.js",
+
   "scripts": {
     "dev": "nodemon --watch \"src/**/*.ts\" --exec tsx src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
+
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:studio": "prisma studio",
+
     "lint": "eslint src --ext .ts",
     "format": "prettier --write src",
+
     "contract:emit": "prisma contract emit",
     "postinstall": "prisma skills sync || exit 0"
   },
+
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
@@ -30,6 +35,7 @@
     "tsx": "^4.23.13",
     "typescript": "^7.0.2"
   },
+
   "dependencies": {
     "@prisma/adapter-pg": "^7.10.0",
     "@prisma/client": "^7.10.0",

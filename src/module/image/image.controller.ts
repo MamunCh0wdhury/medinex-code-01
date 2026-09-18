@@ -1,7 +1,7 @@
-import AppError from "../../utils/AppError";
-import { catchAsync } from "../../utils/catchAsync";
-import imageService from "./image.service";
-import { imageValidation } from "./image.validation";
+import AppError from "../../utils/AppError.js";
+import { catchAsync } from "../../utils/catchAsync.js";
+import imageService from "./image.service.js";
+import { imageValidation } from "./image.validation.js";
 
 const requireParamId = (id: string | string[] | undefined): number => {
   if (typeof id !== "string" || !id.trim()) {
