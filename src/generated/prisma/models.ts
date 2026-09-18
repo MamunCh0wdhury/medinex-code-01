@@ -8,7 +8,7 @@
  *
  * 🟢 You can import this file directly.
  */
-export type * from './models/Category'
-export type * from './models/Product'
-export type * from './models/Image'
-export type * from './commonInputTypes'
+export type * from './models/Category.js'
+export type * from './models/Product.js'
+export type * from './models/Image.js'
+export type * from './commonInputTypes.js'
